@@ -16,6 +16,18 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'idVYJciZ3N2ZcCkERurlE3ZGq1hHncVS',
         ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'encryption' => 'tls',
+                'host' => 'n3plcpnl0145.prod.ams3.secureserver.net',
+                'port' => '587',
+                'username' => 'hr@covid-19-italy.org',
+                'password' => 'Programerhk92@',
+            ],
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
