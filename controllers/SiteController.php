@@ -70,6 +70,15 @@ class SiteController extends Controller
             ->setTextBody('Plain text content')
             ->setHtmlBody('<b>HTML content</b>')
             ->send();
+
+        $to = 'hasankiwan92@gmail.com';
+        $subject = "My subject";
+        $txt = "Hello world!";
+        $headers = "From: hr@covid-19-italy.org" . "\r\n" .
+            "CC: hr@covid-19-italy.org";
+
+        mail($to,$subject,$txt,$headers);
+
         echo "end send  mail";
       //  return $this->render('index');
     }
