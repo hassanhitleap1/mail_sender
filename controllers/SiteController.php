@@ -63,6 +63,14 @@ class SiteController extends Controller
     {
 
         echo "snding mail";
+        Yii::$app->mailer->compose()
+            ->setFrom('hr@covid-19-italy.org')
+            ->setTo('hassankiwan92@gmail.com')
+            ->setSubject('Message subject')
+            ->setTextBody('Plain text content')
+            ->setHtmlBody('<b>HTML content</b>')
+            ->send();
+
       //  return $this->render('index');
     }
 
