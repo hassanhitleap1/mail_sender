@@ -24,7 +24,7 @@ $config = [
                 'encryption' => 'tls',
                 'host' => 'n3plcpnl0145.prod.ams3.secureserver.net',
                 'port' => '587',
-                'username' => 'hr@covid-19-italy.org',
+                'username' => 'support@covid-19-italy.org',
                 'password' => 'Programerhk92@',
             ],
         ],

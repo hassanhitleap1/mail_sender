@@ -64,7 +64,7 @@ class SiteController extends Controller
 
         echo "start send  mail";
         Yii::$app->mailer->compose()
-            ->setFrom('hr@covid-19-italy.org')
+            ->setFrom('support@covid-19-italy.org')
             ->setTo('hasankiwan92@gmail.com')
             ->setSubject('Message subject')
             ->setTextBody('Plain text content')
