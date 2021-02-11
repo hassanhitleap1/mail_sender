@@ -62,15 +62,15 @@ class SiteController extends Controller
     public function actionIndex()
     {
 
-        echo "snding mail";
+        echo "start send  mail";
         Yii::$app->mailer->compose()
             ->setFrom('hr@covid-19-italy.org')
-            ->setTo('hassankiwan92@gmail.com')
+            ->setTo('hasankiwan92@gmail.com')
             ->setSubject('Message subject')
             ->setTextBody('Plain text content')
             ->setHtmlBody('<b>HTML content</b>')
             ->send();
-
+        echo "end send  mail";
       //  return $this->render('index');
     }
 
